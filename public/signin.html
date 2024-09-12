@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Sign In</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <form class="auth-form">
+                    <h2>Sign In</h2>
+                    <div class="input-group">
+                        <input
+                            id="signin-username"
+                            type="text"
+                            placeholder="Username"
+                            required
+                        />
+                    </div>
+                    <div class="input-group">
+                        <input
+                            id="signin-username"
+                            type="password"
+                            placeholder="Password"
+                            required
+                        />
+                    </div>
+                    <button id="signin-btn" type="submit">Sign In</button>
+                    <p class="toggle-form">
+                        Don't have an account? <a href="index.html">Sign Up</a>
+                    </p>
+                </form>
+                <div>
+                    <span>User Information:</span>
+                    <div id="information"></div>
+                </div>
+                <button id="logout-btn" class="hidden">Logout</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
